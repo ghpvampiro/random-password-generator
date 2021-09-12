@@ -7,10 +7,6 @@ namespace PasswordGenerator
     class PasswordContent
     {
         private int length;
-        //private Char[] arrayUpperCase;
-        //private Char[] arrayLowerCase;
-        //private Char[] arrayDigits;
-        //private Char[] arraySpecialCharacters;
 
         private bool useUpper;
         private bool useLower;
@@ -19,7 +15,12 @@ namespace PasswordGenerator
 
         private Char[] arrayPassword;
 
-        public PasswordContent(int length, bool useUpper, bool useLower, bool useDigits, bool useSpecial)
+        public PasswordContent(
+            int length, 
+            bool useUpper, 
+            bool useLower, 
+            bool useDigits, 
+            bool useSpecial)
         {
             this.length = length;
             this.useUpper = useUpper;
@@ -37,6 +38,7 @@ namespace PasswordGenerator
             Char[] code = new char[length];
 
             ArrayContent();
+
             Console.WriteLine(arrayPassword);
 
             for (int i = 0; i < length; i++)
@@ -73,25 +75,21 @@ namespace PasswordGenerator
             //atribui os valores das strings aos arrays
             if (useUpper) 
             {
-                
                 content = content + u;
             }
 
             if (useLower) 
             {
-                
                 content = content + l;
             }
 
             if (useDigits) 
             {
-                
                 content = content + d;
             }
 
             if (useSpecial) 
             {
-                
                 content = content + c;
             }
 
