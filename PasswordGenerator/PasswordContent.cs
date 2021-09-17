@@ -39,7 +39,7 @@ namespace PasswordGenerator
 
             ArrayContent();
 
-            Console.WriteLine(arrayPassword);
+            //Console.WriteLine(arrayPassword);
 
             for (int i = 0; i < length; i++)
             {
